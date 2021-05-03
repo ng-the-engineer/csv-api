@@ -1,0 +1,12 @@
+name: csv-api
+services:
+  csv-api:
+    public: true
+    image: engineer5/csv-api:latest
+    build: .
+    replicas: 1
+    ports:
+      - 5055
+    resources:
+      cpu: 100m
+      memory: 128Mi
